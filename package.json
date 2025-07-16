@@ -10,7 +10,7 @@
     "registry:build": "node ~/code/shadcn/ui/packages/shadcn/dist/index.js build",
     "build-storybook": "storybook build",
     "build-storybook-static": "build-storybook -o storybook-static",
-    "postbuild-storybook": "cp -r storybook-static/* public/storybook/"
+    "postbuild-storybook": "mkdir -p public/storybook && cp -r storybook-static/* public/storybook/"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.4",
